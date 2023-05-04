@@ -1,20 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:app_dados/gradient_container.dart';
 
 void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
+  runApp(
+    const MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+        //crea la pagina en blanco
+        body: GradientContainer(
+            Color.fromARGB(255, 126, 29, 182), Color.fromARGB(255, 37, 5, 92)),
       ),
-    );
-  }
+    ),
+  ); //runapp() Debe ser llamada desde main
 }
